@@ -1,0 +1,78 @@
+═══════════════════════════════════════════════════════════
+    PASTA DE SITES GERADOS - DM NEGÓCIOS IA
+═══════════════════════════════════════════════════════════
+
+📁 LOCALIZAÇÃO:
+G:\DM Negocios IA\generated_sites\
+
+📋 SITES DISPONÍVEIS:
+
+✅ marques-design-studio/
+   - Site ultra clean DM Negócios IA
+   - Layout minimalista profissional
+   - Domínio: https://marquesdesignstudio.com/
+   - Pronto para publicar no Netlify
+
+═══════════════════════════════════════════════════════════
+
+🚀 COMO PUBLICAR:
+
+1. Acesse: https://app.netlify.com/drop
+
+2. Arraste a pasta: marques-design-studio/
+
+3. Aguarde upload
+
+4. Configure domínio (opcional)
+
+5. Site publicado! ✅
+
+═══════════════════════════════════════════════════════════
+
+📝 ANTES DE PUBLICAR:
+
+1. Abra: marques-design-studio/index.html
+
+2. Encontre linha 26:
+   <a href="https://wa.me/5511999999999"
+
+3. Substitua 5511999999999 pelo seu WhatsApp real
+   Formato: 55 + DDD + número (sem espaços)
+
+4. (Opcional) Adicione sua foto como profile.jpg
+
+5. Arraste no Netlify!
+
+═══════════════════════════════════════════════════════════
+
+🎨 CARACTERÍSTICAS DO SITE:
+
+✓ Fundo escuro profissional (#0a0a0a)
+✓ Ícone de cérebro (substituível por foto)
+✓ Título "DM Negócios IA"
+✓ Descrição de serviços clara
+✓ Botão WhatsApp destacado
+✓ 100% responsivo
+✓ Zero elementos técnicos
+✓ Design ultra clean
+
+═══════════════════════════════════════════════════════════
+
+📂 ESTRUTURA:
+
+marques-design-studio/
+├── index.html    → Página principal
+├── style.css     → Estilos
+└── README.md     → Instruções detalhadas
+
+🌐 DOMÍNIO: https://marquesdesignstudio.com/
+
+═══════════════════════════════════════════════════════════
+
+🔗 LINK ÚTIL:
+
+Netlify Drop: https://app.netlify.com/drop
+
+═══════════════════════════════════════════════════════════
+
+© 2025 DM Negócios IA

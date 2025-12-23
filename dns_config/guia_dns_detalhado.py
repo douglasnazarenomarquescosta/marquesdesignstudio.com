@@ -1,0 +1,203 @@
+#!/usr/bin/env python3
+"""
+Guia para configurar DNS mantendo nameservers da Hostinger
+"""
+
+def main():
+    print("="*70)
+    print("  🌐 CONFIGURAR DNS - MANTENDO NAMESERVERS HOSTINGER")
+    print("="*70)
+    print()
+    
+    print("📊 SITUAÇÃO ATUAL:")
+    print("   Nameservers: ns1.dns-parking.com")
+    print("                ns2.dns-parking.com")
+    print("   Status: ✅ Correto para Hostinger")
+    print()
+    
+    print("⚠️  NÃO MUDE OS NAMESERVERS!")
+    print("   Você vai apenas ADICIONAR registros DNS")
+    print()
+    
+    print("="*70)
+    print("  📋 PASSO A PASSO DETALHADO")
+    print("="*70)
+    print()
+    
+    print("1️⃣  ACESSAR PAINEL HOSTINGER")
+    print("   🔗 https://hpanel.hostinger.com")
+    print("   → Faça login")
+    print()
+    
+    print("2️⃣  ENCONTRAR SEUS DOMÍNIOS")
+    print("   → No menu lateral esquerdo")
+    print("   → Clique em: 'Domínios'")
+    print()
+    
+    print("3️⃣  SELECIONAR O DOMÍNIO")
+    print("   → Procure: marquesdesignstudio.com")
+    print("   → Clique nele")
+    print()
+    
+    print("4️⃣  ACESSAR CONFIGURAÇÕES DNS")
+    print("   → Procure por uma aba/botão com nome:")
+    print("      • 'DNS / Name Servers'")
+    print("      • 'Gerenciar DNS'")
+    print("      • 'DNS Zone'")
+    print("      • 'DNS Records'")
+    print("   → Clique nessa opção")
+    print()
+    
+    print("5️⃣  VERIFICAR NAMESERVERS (não mexer)")
+    print("   ✅ Deve mostrar:")
+    print("      ns1.dns-parking.com")
+    print("      ns2.dns-parking.com")
+    print("   → Deixe como está!")
+    print()
+    
+    print("6️⃣  IR PARA DNS ZONE EDITOR")
+    print("   → Procure botão: 'DNS Zone Editor'")
+    print("   → Ou: 'Gerenciar registros DNS'")
+    print("   → Ou: 'Add Record' / 'Adicionar Registro'")
+    print()
+    
+    print("="*70)
+    print("  ➕ ADICIONAR REGISTROS")
+    print("="*70)
+    print()
+    
+    print("7️⃣  ADICIONAR REGISTRO A (domínio raiz)")
+    print()
+    print("   Clique em: '+ Adicionar Registro' ou 'Add Record'")
+    print()
+    print("   Preencha EXATAMENTE assim:")
+    print("   ┌─────────────────────────────────────┐")
+    print("   │ Tipo/Type:        A                 │")
+    print("   │ Nome/Name:        @                 │")
+    print("   │                   (ou deixe vazio)  │")
+    print("   │ Valor/Value:      76.76.21.21       │")
+    print("   │ TTL:              3600              │")
+    print("   │                   (ou 1 Hour)       │")
+    print("   └─────────────────────────────────────┘")
+    print()
+    print("   → Clique em: 'Adicionar' ou 'Save' ou 'Add'")
+    print()
+    
+    print("8️⃣  ADICIONAR REGISTRO CNAME (www)")
+    print()
+    print("   Clique novamente em: '+ Adicionar Registro'")
+    print()
+    print("   Preencha EXATAMENTE assim:")
+    print("   ┌─────────────────────────────────────┐")
+    print("   │ Tipo/Type:        CNAME             │")
+    print("   │ Nome/Name:        www               │")
+    print("   │ Valor/Value:      cname.vercel-dns.com │")
+    print("   │ TTL:              3600              │")
+    print("   └─────────────────────────────────────┘")
+    print()
+    print("   → Clique em: 'Adicionar' ou 'Save'")
+    print()
+    
+    print("="*70)
+    print("  ✅ RESULTADO ESPERADO")
+    print("="*70)
+    print()
+    
+    print("Você deve ver na lista de registros DNS:")
+    print()
+    print("┌──────────┬────────┬──────────────────────┬──────┐")
+    print("│ Tipo     │ Nome   │ Valor                │ TTL  │")
+    print("├──────────┼────────┼──────────────────────┼──────┤")
+    print("│ A        │ @      │ 76.76.21.21          │ 3600 │")
+    print("│ CNAME    │ www    │ cname.vercel-dns.com │ 3600 │")
+    print("│ ...outros registros existentes...        │      │")
+    print("└──────────┴────────┴──────────────────────┴──────┘")
+    print()
+    
+    print("⚠️  IMPORTANTE:")
+    print("   • NÃO DELETE outros registros (MX, TXT, etc)")
+    print("   • Se já existir um registro A, EDITE ao invés de criar novo")
+    print("   • Se já existir CNAME www, EDITE o valor")
+    print()
+    
+    print("="*70)
+    print("  ⏰ AGUARDAR PROPAGAÇÃO")
+    print("="*70)
+    print()
+    
+    print("9️⃣  VERIFICAR PROPAGAÇÃO DNS")
+    print()
+    print("   Após salvar os registros, aguarde de 10 a 60 minutos")
+    print()
+    print("   🔍 Verificar em:")
+    print("   https://dnschecker.org/?domain=marquesdesignstudio.com&type=A")
+    print()
+    print("   ✅ Quando a maioria dos países mostrar: 76.76.21.21")
+    print("   → DNS propagado com sucesso!")
+    print()
+    
+    print("="*70)
+    print("  🚀 PRÓXIMO PASSO: ADICIONAR NO VERCEL")
+    print("="*70)
+    print()
+    
+    print("🔟 CONFIGURAR NO VERCEL")
+    print()
+    print("   1. Acesse: https://vercel.com/dashboard")
+    print("   2. Clique no projeto: marques-design-studio")
+    print("   3. Settings → Domains")
+    print("   4. Digite: marquesdesignstudio.com")
+    print("   5. Clique: Add")
+    print("   6. Adicione também: www.marquesdesignstudio.com")
+    print()
+    print("   ✅ Vercel validará automaticamente os registros DNS")
+    print()
+    
+    print("="*70)
+    print("  🎉 CONCLUSÃO")
+    print("="*70)
+    print()
+    print("Tempo total: 10-15 minutos")
+    print("Custo: R$ 0,00 (só paga o domínio)")
+    print()
+    print("Após propagação, seu site estará em:")
+    print("   🌐 https://marquesdesignstudio.com")
+    print("   🔒 Com SSL/HTTPS automático")
+    print()
+    
+    print("="*70)
+    print()
+    
+    # Criar arquivo de checklist
+    with open("checklist_dns.txt", "w", encoding="utf-8") as f:
+        f.write("CHECKLIST DE CONFIGURAÇÃO DNS\n")
+        f.write("="*50 + "\n\n")
+        f.write("[ ] 1. Login na Hostinger (hpanel.hostinger.com)\n")
+        f.write("[ ] 2. Acessar Domínios → marquesdesignstudio.com\n")
+        f.write("[ ] 3. Abrir DNS Zone Editor\n")
+        f.write("[ ] 4. Adicionar registro A: @ → 76.76.21.21\n")
+        f.write("[ ] 5. Adicionar CNAME: www → cname.vercel-dns.com\n")
+        f.write("[ ] 6. Salvar alterações\n")
+        f.write("[ ] 7. Verificar em dnschecker.org (aguardar 10-60 min)\n")
+        f.write("[ ] 8. Login no Vercel (vercel.com/dashboard)\n")
+        f.write("[ ] 9. Adicionar domínio: marquesdesignstudio.com\n")
+        f.write("[ ] 10. Adicionar domínio: www.marquesdesignstudio.com\n")
+        f.write("[ ] 11. Aguardar validação do Vercel\n")
+        f.write("[ ] 12. ✅ Site online com HTTPS!\n")
+    
+    print("📝 Checklist salvo em: checklist_dns.txt")
+    print()
+    
+    # Abrir links
+    import webbrowser
+    open_now = input("🌐 Deseja abrir os links agora? (s/n): ")
+    
+    if open_now.lower() == 's':
+        print("\n🌐 Abrindo navegador...")
+        webbrowser.open("https://hpanel.hostinger.com")
+        import time
+        time.sleep(2)
+        webbrowser.open("https://dnschecker.org/?domain=marquesdesignstudio.com&type=A")
+
+if __name__ == "__main__":
+    main()

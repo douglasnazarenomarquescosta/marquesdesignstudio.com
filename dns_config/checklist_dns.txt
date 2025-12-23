@@ -1,0 +1,15 @@
+CHECKLIST DE CONFIGURAÇÃO DNS
+==================================================
+
+[ ] 1. Login na Hostinger (hpanel.hostinger.com)
+[ ] 2. Acessar Domínios → marquesdesignstudio.com
+[ ] 3. Abrir DNS Zone Editor
+[ ] 4. Adicionar registro A: @ → 76.76.21.21
+[ ] 5. Adicionar CNAME: www → cname.vercel-dns.com
+[ ] 6. Salvar alterações
+[ ] 7. Verificar em dnschecker.org (aguardar 10-60 min)
+[ ] 8. Login no Vercel (vercel.com/dashboard)
+[ ] 9. Adicionar domínio: marquesdesignstudio.com
+[ ] 10. Adicionar domínio: www.marquesdesignstudio.com
+[ ] 11. Aguardar validação do Vercel
+[ ] 12. ✅ Site online com HTTPS!

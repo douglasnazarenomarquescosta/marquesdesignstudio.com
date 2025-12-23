@@ -1,0 +1,129 @@
+╔════════════════════════════════════════════════════════════════════╗
+║           CONFIGURAR DNS - PASSO A PASSO DETALHADO                 ║
+║              Site: marquesdesignstudio.com                         ║
+║              Netlify URL: melodious-truffle-e19985.netlify.app     ║
+╚════════════════════════════════════════════════════════════════════╝
+
+✅ SITE JÁ ESTÁ ONLINE EM:
+   https://melodious-truffle-e19985.netlify.app
+
+🎯 AGORA VAMOS CONECTAR O DOMÍNIO marquesdesignstudio.com
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📌 PASSO 1: Acessar Painel Hostinger
+
+1. Acesse: https://hpanel.hostinger.com
+2. Faça login com suas credenciais
+3. Clique em "Domínios" no menu lateral
+4. Clique em "marquesdesignstudio.com"
+5. Clique na aba "DNS / Name Servers" ou "Zona DNS"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📌 PASSO 2: Adicionar Registro A (Domínio Raiz)
+
+Clique em "Adicionar Novo Registro" ou "Add Record"
+
+   ┌────────────────────────────────────────┐
+   │ Tipo:         A                        │
+   │ Nome:         @                        │
+   │ Valor:        75.2.60.5                │
+   │ TTL:          3600                     │
+   └────────────────────────────────────────┘
+
+⚠️  O campo "Nome" pode aparecer como:
+    - @
+    - marquesdesignstudio.com
+    - (vazio)
+    
+    Qualquer uma dessas opções está correta!
+
+Clique em "Adicionar" ou "Save"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📌 PASSO 3: Adicionar Registro CNAME (www)
+
+Clique em "Adicionar Novo Registro" novamente
+
+   ┌────────────────────────────────────────┐
+   │ Tipo:         CNAME                    │
+   │ Nome:         www                      │
+   │ Valor:        melodious-truffle-e19985.netlify.app │
+   │ TTL:          3600                     │
+   └────────────────────────────────────────┘
+
+⚠️  IMPORTANTE: 
+    - NÃO adicione "https://" no valor
+    - NÃO adicione "/" no final
+    - Apenas: melodious-truffle-e19985.netlify.app
+
+Clique em "Adicionar" ou "Save"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📌 PASSO 4: Remover Registros Antigos (se houver)
+
+Se você ver registros A ou CNAME antigos apontando para outros lugares:
+
+   ❌ DELETE registros antigos tipo A com nome "@"
+   ❌ DELETE registros antigos tipo CNAME com nome "www"
+
+Mantenha APENAS os 2 novos registros que você acabou de criar.
+
+⚠️  NÃO DELETE registros:
+    - MX (email)
+    - TXT (verificações)
+    - NS (nameservers)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📌 PASSO 5: Configurar Domínio Customizado no Netlify
+
+1. Acesse: https://app.netlify.com/sites/melodious-truffle-e19985/settings/domain
+
+2. Clique em "Add custom domain" ou "Add domain alias"
+
+3. Digite: marquesdesignstudio.com
+
+4. Clique em "Verify" / "Verificar"
+
+5. O Netlify vai detectar os registros DNS (pode levar alguns minutos)
+
+6. Clique em "Add domain" quando aparecer
+
+7. Ative SSL/HTTPS (automático, aguarde ~30 minutos)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⏱️  TEMPO DE PROPAGAÇÃO DNS
+
+Aguarde entre 30 minutos a 2 horas para o DNS propagar globalmente.
+
+🔍 Verificar propagação:
+   https://dnschecker.org/#A/marquesdesignstudio.com
+
+Quando o IP 75.2.60.5 aparecer na maioria dos servidores, está pronto!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ CHECKLIST FINAL:
+
+□ Registro A adicionado: @ → 75.2.60.5
+□ Registro CNAME adicionado: www → melodious-truffle-e19985.netlify.app
+□ Registros antigos removidos
+□ Domínio customizado adicionado no Netlify
+□ Aguardar propagação DNS (30-60 min)
+□ Verificar em: https://marquesdesignstudio.com
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 PARABÉNS!
+
+Após a propagação, seu site estará acessível em:
+   ✅ https://marquesdesignstudio.com
+   ✅ https://www.marquesdesignstudio.com
+   ✅ https://melodious-truffle-e19985.netlify.app
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

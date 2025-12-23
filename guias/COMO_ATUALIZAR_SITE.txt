@@ -1,0 +1,125 @@
+═══════════════════════════════════════════════════════════════
+    COMO ATUALIZAR SEU SITE marquesdesignstudio.com
+═══════════════════════════════════════════════════════════════
+
+🎯 LOCALIZAÇÃO DOS ARQUIVOS:
+G:\Projeto de IA\generated_sites\marques-design-studio\
+
+📁 Arquivos editáveis:
+- index.html (conteúdo/texto)
+- style.css (cores/design)
+- script.js (animações)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔄 MÉTODO 1: Via GitHub Copilot/IA (FÁCIL)
+
+1. Me peça mudanças: "Quero mudar a cor para azul"
+2. Uso /webbuilder para gerar nova versão
+3. Arraste nova pasta no Netlify Drop
+4. Site atualizado automaticamente!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔄 MÉTODO 2: Editar Arquivos Manualmente
+
+1. Abra os arquivos em:
+   G:\Projeto de IA\generated_sites\marques-design-studio\
+
+2. Edite com qualquer editor:
+   - Notepad++
+   - VS Code
+   - Bloco de Notas
+
+3. Salve as mudanças
+
+4. Arraste pasta atualizada no Netlify Drop:
+   https://app.netlify.com/drop
+
+5. Netlify detecta automaticamente e atualiza!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 EXEMPLOS DE EDIÇÕES SIMPLES:
+
+MUDAR TEXTO:
+- Abra: index.html
+- Procure o texto que quer mudar
+- Edite e salve
+- Faça upload no Netlify
+
+MUDAR CORES:
+- Abra: style.css
+- Procure por cores (ex: #9333ea, #a855f7)
+- Substitua por outras cores
+- Salve e faça upload
+
+ADICIONAR FOTOS:
+- Coloque imagens na pasta
+- Edite index.html
+- Adicione: <img src="foto.jpg">
+- Salve e faça upload
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 FAZER UPLOAD (ATUALIZAR SITE):
+
+1. Acesse: https://app.netlify.com/drop
+
+2. Arraste a pasta:
+   G:\Projeto de IA\generated_sites\marques-design-studio\
+
+3. Netlify substitui automaticamente!
+
+4. Site atualizado em segundos!
+
+⚠️ IMPORTANTE: Sempre arraste a PASTA INTEIRA, não arquivos individuais!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎨 MUDANÇAS QUE POSSO FAZER POR VOCÊ:
+
+Peça qualquer coisa como:
+
+✓ "Mudar cores para azul e branco"
+✓ "Adicionar seção de portfólio com 6 projetos"
+✓ "Colocar formulário de contato"
+✓ "Adicionar galeria de fotos"
+✓ "Mudar título para..."
+✓ "Adicionar redes sociais (Instagram, WhatsApp)"
+✓ "Criar página 'Sobre' separada"
+
+Uso /webbuilder e gero tudo pronto!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 DICA: Se não sabe HTML/CSS, é melhor pedir para mim!
+
+Diga: "Quero adicionar [algo]" e eu faço tudo!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔗 LINKS ÚTEIS:
+
+Netlify Drop (fazer upload):
+→ https://app.netlify.com/drop
+
+Seu site Netlify:
+→ https://app.netlify.com/sites/melodious-truffle-e19985
+
+Seu site online:
+→ http://marquesdesignstudio.com
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📞 EXEMPLOS DE PEDIDOS:
+
+"Adiciona um formulário de orçamento"
+"Muda a cor roxa para verde"
+"Adiciona seção com meus projetos"
+"Coloca botão de WhatsApp"
+"Cria página de serviços"
+
+→ Eu gero, você arrasta no Netlify, PRONTO! ✅
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

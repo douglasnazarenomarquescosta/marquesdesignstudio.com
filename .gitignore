@@ -1,0 +1,42 @@
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diretórios de dependências
+node_modules/
+bower_components/
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Arquivos do IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ambiente
+.env
+.env.local
+.env.*.local
+
+# Build/Deploy
+dist/
+build/
+*.pyc
+__pycache__/
+
+# Cache do Python
+*.py[cod]
+*$py.class
