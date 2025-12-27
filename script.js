@@ -1,3 +1,76 @@
+// Modal de Orçamento
+const modal = document.getElementById('modal-orcamento');
+const btnOrcamento = document.getElementById('btn-orcamento');
+const spanClose = document.querySelector('.modal-close');
+const form = document.getElementById('form-orcamento');
+
+// Abrir modal
+if (btnOrcamento) {
+    btnOrcamento.addEventListener('click', () => {
+        modal.classList.add('active');
+    });
+}
+
+// Fechar modal ao clicar no X
+if (spanClose) {
+    spanClose.addEventListener('click', () => {
+        modal.classList.remove('active');
+    });
+}
+
+// Fechar modal ao clicar fora
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.classList.remove('active');
+    }
+});
+
+// Enviar formulário
+if (form) {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const email = document.getElementById('email').value;
+        const whatsapp = document.getElementById('whatsapp').value;
+        const assunto = document.getElementById('assunto').value;
+        const descricao = document.getElementById('descricao').value;
+        
+        // Criar corpo do email
+        const corpoEmail = `Olá Douglas,
+
+Segue minha solicitação de orçamento:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📧 Email: ${email}
+📱 WhatsApp: ${whatsapp}
+
+Como posso te ajudar:
+${assunto}
+
+Descrição detalhada:
+${descricao}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Aguardo seu retorno.
+
+Atenciosamente.`;
+        
+        // Criar link mailto
+        const mailtoLink = `mailto:dmnegocios79@gmail.com?subject=${encodeURIComponent('Solicitação de Orçamento - ' + assunto)}&body=${encodeURIComponent(corpoEmail)}`;
+        
+        // Abrir cliente de email
+        window.location.href = mailtoLink;
+        
+        // Fechar modal e limpar formulário após pequeno delay
+        setTimeout(() => {
+            modal.classList.remove('active');
+            form.reset();
+        }, 500);
+    });
+}
+
 // Smooth scroll para links de navegação
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -19,8 +92,8 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Handler para botões CTA
-document.querySelectorAll('.cta-button').forEach(button => {
+// Handler para botões CTA (exceto o botão de orçamento)
+document.querySelectorAll('.cta-button:not(#btn-orcamento)').forEach(button => {
     button.addEventListener('click', () => {
         const whatsappNumber = '5564996105742';
         const message = encodeURIComponent('Olá! Gostaria de saber mais sobre os serviços de empreendedorismo.');
