@@ -291,6 +291,40 @@ nav {
     background: #f8f9fa;
 }
 
+.content {
+    width: 100%;
+    margin: 0;
+    padding: 4rem 3rem;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: #f0f0f0;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffd700;
+    font-weight: 600;
+}
+
+.content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #e0e0e0;
+    text-align: justify;
+}
+
 .cta-section h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
