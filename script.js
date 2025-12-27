@@ -22,8 +22,9 @@ window.addEventListener('scroll', () => {
 // Handler para botões CTA
 document.querySelectorAll('.cta-button').forEach(button => {
     button.addEventListener('click', () => {
-        alert('Obrigado pelo interesse! Em breve você receberá mais informações.');
-        // Aqui você pode adicionar lógica real, como abrir formulário ou redirecionar
+        const whatsappNumber = '5564996105742';
+        const message = encodeURIComponent('Olá! Gostaria de saber mais sobre os serviços de empreendedorismo.');
+        window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
     });
 });
 

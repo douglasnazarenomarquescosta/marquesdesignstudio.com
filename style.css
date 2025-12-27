@@ -325,6 +325,30 @@ nav {
     text-align: justify;
 }
 
+.content ul {
+    list-style-type: none;
+    margin: 1.5rem 0 2rem 0;
+    padding: 0;
+}
+
+.content ul li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 0.8rem;
+    color: #e0e0e0;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.content ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #ffd700;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
 .cta-section h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -334,6 +358,190 @@ nav {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     color: var(--secondary-color);
+}
+
+.services {
+    background: #f8f9fa;
+    padding: 5rem 2rem;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.service-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #ffd700;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1a1a2e;
+    font-weight: 600;
+}
+
+.service-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.card-arrow {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: #ffd700;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .card-arrow {
+    transform: translateX(10px);
+}
+
+.service-detail {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: 100vh;
+    padding: 3rem 2rem;
+}
+
+.detail-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.back-link {
+    display: inline-block;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #ffd700;
+}
+
+.service-detail h1 {
+    font-size: 2.5rem;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+}
+
+.service-detail h2 {
+    font-size: 1.8rem;
+    color: #1a1a2e;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #ffd700;
+    padding-left: 1rem;
+}
+
+.service-detail p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.service-detail ul {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+}
+
+.service-detail ul li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 0.8rem;
+    list-style-type: none;
+    position: relative;
+}
+
+.service-detail ul li::before {
+    content: "✓";
+    position: absolute;
+    left: -2rem;
+    color: #ffd700;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.cta-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2.5rem;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 3rem;
+    color: white;
+}
+
+.cta-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.cta-box p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.cta-box .cta-button {
+    background: white;
+    color: #667eea;
+    font-weight: bold;
+}
+
+.cta-box .cta-button:hover {
+    background: #ffd700;
+    color: #1a1a2e;
 }
 
 footer {
